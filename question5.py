@@ -1,0 +1,29 @@
+seats = [
+    "Available",
+    "Booked",
+    "Available",
+    "Available",
+    "Booked",
+    "Available",
+    "Booked",
+    "Available"
+]
+
+for i in range(len(seats)):
+    print("Seat", i + 1, ":", seats[i])
+
+seat_no = int(input("Enter seat number: "))
+
+if seats[seat_no - 1] == "Available":
+    seats[seat_no - 1] = "Booked"
+    print("Seat booked successfully.")
+else:
+    print("Seat is already booked.")
+
+booked = seats.count("Booked")
+available = seats.count("Available")
+
+print()
+print("Total Seats:", len(seats))
+print("Booked Seats:", booked)
+print("Available Seats:", available)
