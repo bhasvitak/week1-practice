@@ -1,0 +1,7 @@
+n = input("Enter the message: ")
+print(f"First 5 Characters: {n[:5]}")
+print(f"Last 5 Characters: {n[-5:]}")
+print(f"Characters from Index 2 to 7: {n[2:8]}")
+print(f"Every Second Character: {n[::2]}")
+print(f"Message in Reverse: {n[::-1]}")
+print(f"Message Without First and Last Character: {n[1:-1]}")
