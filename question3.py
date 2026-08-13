@@ -1,20 +1,14 @@
-n = int(input("Enter number: "))
-
-even_count = 0
-odd_count = 0
-
-print()
-
-for i in range(1, 11):
-    result = n * i
-
-    if result % 2 == 0:
-        print(n, "x", i, "=", result, "- Even")
-        even_count += 1
+n = int(input("Enter the number: "))
+evens = 0
+odds = 0
+for i in range(1,11):
+    if n*i %2 != 0:
+        s = "Odd"
+        odds+=1
     else:
-        print(n, "x", i, "=", result, "- Odd")
-        odd_count += 1
+        s= "Even"
+        evens+=1
+    print(f"{n} x {i} = {n*i} - {s}")
 
-print()
-print("Even Results:", even_count)
-print("Odd Results:", odd_count)
+print(f"Even Result: {evens}")
+print(f"Odd Result: {odds}")

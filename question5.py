@@ -23,7 +23,6 @@ else:
 booked = seats.count("Booked")
 available = seats.count("Available")
 
-print()
 print("Total Seats:", len(seats))
 print("Booked Seats:", booked)
 print("Available Seats:", available)

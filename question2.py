@@ -1,27 +1,23 @@
-name = input("Enter customer name: ")
-age = int(input("Enter age: "))
-tickets = int(input("Enter number of tickets: "))
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+tickets = int(input("Enter the no of tickets: "))
 
-if age < 12:
+if age<12:
     price = 120
-elif age < 60:
+elif 12<=age<60:
     price = 200
 else:
     price = 150
-
-total = price * tickets
-
+total=tickets*price
+discount = 0
+total1 = 0
 if tickets >= 5:
-    discount = total * 10 / 100
-else:
-    discount = 0
+    discount = 0.1*total
+    total1=total-discount
 
-final_amount = total - discount
-
-print()
-print("Customer Name:", name)
-print("Ticket Price: ₹", price, sep="")
-print("Number of Tickets:", tickets)
-print("Total Before Discount: ₹", total, sep="")
-print("Discount: ₹", discount, sep="")
-print("Final Amount: ₹", final_amount, sep="")
+print(f"Customer Name: {name}")
+print(f"Ticket Price: {price}")
+print(f"Number of Tickets: {tickets}")
+print(f"Total Before Discount: {total}")
+print(f"Discount: {discount}")
+print(f"Final Amount: {total1}")

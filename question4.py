@@ -18,7 +18,6 @@ for ch in text:
     else:
         other_count += 1
 
-print()
 print("Uppercase Letters:", upper_count)
 print("Lowercase Letters:", lower_count)
 print("Digits:", digit_count)

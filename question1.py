@@ -1,20 +1,16 @@
-hours = int(input("Enter parking hours: "))
+parking_hours = int(input("Enter the parking hours: "))
 
-if hours <= 2:
-    charge = hours * 30
-elif hours <= 5:
-    charge = hours * 25
+if parking_hours<=2:
+    parking_charges = 30*parking_hours
+elif parking_hours<=5:
+    parking_charges = 25*parking_hours
 else:
-    charge = hours * 20
+    parking_charges = 20*parking_hours
 
-if charge > 150:
-    service_charge = 20
+print(f"Parking Charges: {parking_charges} Rupees")
+if parking_charges>150:
+    print(f"Service Charges: 20 Rupees")
+    print(f"Total Charges: {parking_charges+20} Rupees")
 else:
-    service_charge = 0
-
-final_amount = charge + service_charge
-
-print()
-print("Parking Charge: ₹", charge, sep="")
-print("Service Charge: ₹", service_charge, sep="")
-print("Final Amount: ₹", final_amount, sep="")
+    print(f"Service Charges: 0 Rupees")
+    print(f"Total Charges: {parking_charges} Rupees")
